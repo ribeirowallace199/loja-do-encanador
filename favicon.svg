@@ -1,14 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <defs>
-    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8"/>
-      <stop offset="100%" stop-color="#0284c7"/>
-    </linearGradient>
-  </defs>
-  <rect width="32" height="32" rx="8" fill="#0f172a"/>
-  <!-- Droplet -->
-  <path d="M16 5 C16 5, 23 14, 23 19 C23 23, 19.8 26, 16 26 C12.2 26, 9 23, 9 19 C9 14, 16 5, 16 5 Z" fill="url(#blueGrad)"/>
-  <!-- Small Wrench Accent -->
-  <circle cx="23" cy="23" r="5" fill="#f59e0b"/>
-  <path d="M21.5 21.5 L24.5 24.5 M24.5 21.5 L21.5 24.5" stroke="#0f172a" stroke-width="1.5" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <rect width="128" height="128" rx="28" fill="#0075D6"/>
+  <!-- Torneira estilizada branca -->
+  <path d="
+    M 28 52
+    L 76 52
+    L 76 60
+    C 84 60 90 66 90 74
+    L 90 82
+    L 78 82
+    L 78 72
+    C 78 70 76 68 74 68
+    L 70 68
+    L 70 64
+    L 28 64
+    Z
+  " fill="#FFFFFF"/>
+  <!-- Bico -->
+  <rect x="76" y="82" width="16" height="5" rx="1.5" fill="#E0F2FE"/>
+  <!-- Haste da torneira -->
+  <rect x="52" y="36" width="12" height="16" rx="2" fill="#FFFFFF"/>
+  <!-- Volante cruz da torneira -->
+  <path d="
+    M 38 30
+    C 38 26 42 22 47 22
+    L 52 22
+    L 52 16
+    C 52 11 56 8 61 8
+    C 66 8 70 11 70 16
+    L 70 22
+    L 75 22
+    C 80 22 84 26 84 30
+    C 84 35 80 38 75 38
+    L 70 38
+    L 70 42
+    L 52 42
+    L 52 38
+    L 47 38
+    C 42 38 38 35 38 30
+    Z
+  " fill="#38BDF8"/>
+  <!-- Gota de água -->
+  <path d="
+    M 84 94
+    C 84 94 72 107 72 113
+    C 72 119 77 124 84 124
+    C 91 124 96 119 96 113
+    C 96 107 84 94 84 94
+    Z
+  " fill="#38BDF8"/>
+  <ellipse cx="81" cy="113" rx="2" ry="4" transform="rotate(-20 81 113)" fill="#FFFFFF" opacity="0.8"/>
 </svg>

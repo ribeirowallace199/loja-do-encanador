@@ -1,0 +1,233 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Barlow+Condensed:wght@700;800;900&amp;display=swap');
+      
+      .brand-title {
+        font-family: 'Bebas Neue', 'Barlow Condensed', 'Impact', sans-serif;
+        text-anchor: middle;
+        fill: #111827;
+      }
+      
+      .phone-num {
+        font-family: 'Bebas Neue', 'Barlow Condensed', 'Impact', sans-serif;
+        fill: #111827;
+      }
+    </style>
+  </defs>
+
+  <g id="logo-root" transform="translate(10, 0)">
+    <!-- ==================== TUBO SUPERIOR ESQUERDO E FLANGE ==================== -->
+    <!-- Flange do Cano Superior (terminal aberto para baixo) -->
+    <rect x="74" y="148" width="38" height="15" rx="3" fill="#0060B2"/>
+
+    <!-- Tubo Superior com curva suave -->
+    <path d="
+      M 80 148
+      L 80 115
+      A 40 40 0 0 1 120 75
+      L 580 75
+      L 580 101
+      L 120 101
+      A 14 14 0 0 0 106 115
+      L 106 148
+      Z
+    " fill="#0075D6"/>
+
+    <!-- ==================== TUBO INFERIOR ESQUERDO E FLANGE ==================== -->
+    <!-- Flange do Cano Inferior (terminal aberto para cima) -->
+    <rect x="74" y="222" width="38" height="15" rx="3" fill="#0060B2"/>
+
+    <!-- Tubo Inferior com curva suave -->
+    <path d="
+      M 106 237
+      L 106 270
+      A 14 14 0 0 0 120 284
+      L 615 284
+      L 615 310
+      L 120 310
+      A 40 40 0 0 1 80 270
+      L 80 237
+      Z
+    " fill="#0075D6"/>
+
+    <!-- ==================== TORNEIRA (CANTO SUPERIOR DIREITO) ==================== -->
+    <!-- Corpo da Torneira conectando ao tubo -->
+    <path d="
+      M 580 75
+      L 655 75
+      L 655 87
+      L 680 87
+      C 690 87 698 95 698 105
+      L 698 138
+      L 672 138
+      L 672 115
+      C 672 111 668 107 664 107
+      L 655 107
+      L 655 101
+      L 580 101
+      Z
+    " fill="#0075D6"/>
+
+    <!-- Bico da Torneira -->
+    <rect x="668" y="138" width="34" height="9" rx="2" fill="#0060B2"/>
+
+    <!-- Haste Vertical da Torneira -->
+    <rect x="618" y="52" width="22" height="24" rx="2" fill="#0075D6"/>
+    <rect x="614" y="65" width="30" height="8" rx="2" fill="#0060B2"/>
+
+    <!-- Volante / Manípulo Borboleta da Torneira -->
+    <path d="
+      M 598 42
+      C 598 36 603 32 609 32
+      L 618 32
+      L 618 24
+      C 618 18 622 14 629 14
+      C 636 14 640 18 640 24
+      L 640 32
+      L 649 32
+      C 655 32 660 36 660 42
+      C 660 48 655 52 649 52
+      L 640 52
+      L 640 58
+      L 618 58
+      L 618 52
+      L 609 52
+      C 603 52 598 48 598 42
+      Z
+    " fill="#0088F0"/>
+    <circle cx="629" cy="42" r="4.5" fill="#FFFFFF" opacity="0.9"/>
+
+    <!-- ==================== GOTA D'ÁGUA ==================== -->
+    <g transform="translate(685, 185)">
+      <!-- Gota principal -->
+      <path d="
+        M 0 -22
+        C 0 -22 -22 10 -22 24
+        C -22 36 -12 46 0 46
+        C 12 46 22 36 22 24
+        C 22 10 0 -22 0 -22
+        Z
+      " fill="#0080E8"/>
+      <!-- Centro claro da gota (conforme foto) -->
+      <path d="
+        M 0 -10
+        C 0 -10 -13 14 -13 24
+        C -13 32 -7 37 0 37
+        C 7 37 13 32 13 24
+        C 13 14 0 -10 0 -10
+        Z
+      " fill="#38BDF8"/>
+      <!-- Brilho / reflexo branco -->
+      <ellipse cx="-4" cy="22" rx="3.5" ry="7" transform="rotate(-20 -4 22)" fill="#FFFFFF" opacity="0.8"/>
+    </g>
+
+    <!-- ==================== BALDE / BACIA (CANTO INFERIOR DIREITO) ==================== -->
+    <g transform="translate(650, 248)">
+      <!-- Corpo trapezoidal do balde -->
+      <path d="
+        M 0 0 
+        L 70 0 
+        C 72 0 73 1.5 72.5 3.5 
+        L 64 54 
+        C 63 56.5 61 58 58 58 
+        L 12 58 
+        C 9 58 7 56.5 6 54 
+        L -2.5 3.5 
+        C -3 1.5 -2 0 0 0 
+        Z
+      " fill="#0075D6"/>
+      
+      <!-- Linhas brancas horizontais do balde -->
+      <path d="M 1 15 L 69 15 L 67 21 L 3 21 Z" fill="#FFFFFF"/>
+      <path d="M 5 33 L 65 33 L 63 39 L 7 39 Z" fill="#FFFFFF"/>
+    </g>
+
+    <!-- ==================== TEXTO CENTRAL: LOJA DO ENCANADOR ==================== -->
+    <g id="brand-names">
+      <!-- Linha 1: LOJA DO -->
+      <text 
+        x="360" 
+        y="166" 
+        class="brand-title"
+        font-size="88" 
+        letter-spacing="6"
+      >LOJA DO</text>
+
+      <!-- Linha 2: ENCANADOR -->
+      <text 
+        x="360" 
+        y="252" 
+        class="brand-title"
+        font-size="98" 
+        letter-spacing="4"
+      >ENCANADOR</text>
+    </g>
+
+    <!-- ==================== WHATSAPP NO RODAPÉ ==================== -->
+    <g id="whatsapp-bar" transform="translate(200, 335)">
+      <!-- Quadrado arredondado verde -->
+      <rect x="0" y="4" width="38" height="38" rx="10" fill="#25D366"/>
+      
+      <!-- Símbolo branco WhatsApp -->
+      <g transform="translate(7, 11) scale(0.75)">
+        <path d="
+          M 16 0 
+          C 7.16 0 0 7.16 0 16 
+          C 0 19.12 0.89 22.03 2.42 24.51 
+          L 0.85 31.15 
+          L 7.68 29.58 
+          C 10.06 31.02 12.92 31.85 16 31.85 
+          C 24.84 31.85 32 24.69 32 15.85 
+          C 32 7.16 24.84 0 16 0 
+          Z
+        " fill="#25D366"/>
+        <path d="
+          M 16 1.8
+          C 8.16 1.8 1.8 8.16 1.8 16
+          C 1.8 18.75 2.58 21.32 3.92 23.51
+          L 2.55 29.45
+          L 8.65 28.06
+          C 10.77 29.32 13.3 30.05 16 30.05
+          C 23.84 30.05 30.2 23.69 30.2 15.85
+          C 30.2 8.16 23.84 1.8 16 1.8
+          Z
+        " fill="#FFFFFF"/>
+        <path d="
+          M 21.6 19.4 
+          C 21.3 19.3 19.8 18.5 19.5 18.4 
+          C 19.2 18.3 19 18.2 18.8 18.6 
+          C 18.5 19 18 19.7 17.8 19.9 
+          C 17.6 20.1 17.4 20.1 17.1 20  
+          C 16.8 19.8 15.7 19.5 14.5 18.4 
+          C 13.5 17.5 12.9 16.4 12.7 16.1 
+          C 12.5 15.8 12.7 15.6 12.8 15.5 
+          C 13 15.3 13.2 15.1 13.4 14.8 
+          C 13.6 14.6 13.6 14.4 13.8 14.2 
+          C 13.9 14 13.8 13.8 13.8 13.6 
+          C 13.7 13.5 13.2 12.3 13 11.7 
+          C 12.8 11.2 12.6 11.2 12.4 11.2 
+          C 12.2 11.2 12 11.2 11.7 11.2 
+          C 11.4 11.2 11.1 11.3 10.8 11.6 
+          C 10.5 11.9 9.8 12.6 9.8 14 
+          C 9.8 15.4 10.8 16.8 11 17 
+          C 11.1 17.2 13 20.2 15.9 21.4 
+          C 18.3 22.4 18.8 22.2 19.3 22.1 
+          C 19.8 22 20.9 21.4 21.1 20.8 
+          C 21.4 20.1 21.4 19.6 21.3 19.5 
+          C 21.2 19.4 21 19.3 20.7 19.2
+          Z
+        " fill="#25D366"/>
+      </g>
+
+      <!-- Número do WhatsApp -->
+      <text 
+        x="48" 
+        y="35" 
+        class="phone-num"
+        font-size="40" 
+        letter-spacing="2"
+      >(35) 3536 2325</text>
+    </g>
+  </g>
+</svg>
