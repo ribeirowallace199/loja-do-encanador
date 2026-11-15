@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="glueTube" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="40%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+    <filter id="shadowGlue" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect width="600" height="450" fill="url(#bgGlue)"/>
+  <ellipse cx="300" cy="385" rx="180" ry="20" fill="#94a3b8" opacity="0.3"/>
+
+  <g filter="url(#shadowGlue)" transform="translate(180, 80) rotate(15)">
+    <!-- Tubo / Bisnaga de Cola Vermelha e Branca -->
+    <path d="M 40 40 L 160 40 L 145 230 L 55 230 Z" fill="url(#glueTube)" stroke="#7f1d1d" stroke-width="2"/>
+    <!-- Dobra traseira do tubo -->
+    <rect x="52" y="225" width="96" height="18" rx="2" fill="#94a3b8"/>
+    <!-- Bico dosador -->
+    <path d="M 85 40 L 85 10 L 115 10 L 115 40 Z" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="92" y="-12" width="16" height="22" rx="2" fill="#ef4444"/>
+    <!-- Gota transparente de cola escorrendo -->
+    <path d="M 100 -12 C 95 -25 90 -35 100 -40 C 110 -35 105 -25 100 -12 Z" fill="#38bdf8" opacity="0.8"/>
+
+    <!-- Rótulo do Tubo -->
+    <rect x="58" y="70" width="84" height="120" fill="#ffffff" rx="4"/>
+    <text x="100" y="95" font-family="system-ui, sans-serif" font-size="11" font-weight="black" fill="#dc2626" text-anchor="middle">ADESIVO</text>
+    <text x="100" y="115" font-family="system-ui, sans-serif" font-size="16" font-weight="black" fill="#0f172a" text-anchor="middle">PVC</text>
+    <text x="100" y="135" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" fill="#64748b" text-anchor="middle">SOLDA A FRIO</text>
+    <rect x="68" y="145" width="64" height="8" rx="4" fill="#0284c7"/>
+  </g>
+
+  <rect x="180" y="380" width="240" height="32" rx="16" fill="#dc2626"/>
+  <text x="300" y="401" font-family="system-ui, sans-serif" font-size="12" font-weight="black" fill="#ffffff" text-anchor="middle">ADESIVO PLÁSTICO / COLA PVC</text>
+</svg>
