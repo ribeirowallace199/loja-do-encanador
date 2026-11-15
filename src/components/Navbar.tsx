@@ -1,6 +1,6 @@
 import { useState, type FC } from 'react';
 import { storeInfo } from '../data/storeInfo';
-import { Clock, Menu, X, Droplets, Wrench, MessageCircle, FileText, Truck, ShoppingCart, Package, Ruler } from 'lucide-react';
+import { Clock, Menu, X, MessageCircle, FileText, Truck, ShoppingCart, Package, Ruler } from 'lucide-react';
 import { InstagramIcon } from './icons/InstagramIcon';
 
 interface NavbarProps {
@@ -77,19 +77,15 @@ export const Navbar: FC<NavbarProps> = ({ budgetCount, onOpenBudget }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
         <div className="flex items-center justify-between gap-4">
           
-          {/* Logo & Nome: LOJA DO ENCANADOR + 2 linhas embaixo */}
-          <a href="#" className="flex items-center gap-3 group shrink-0">
-            <div className="relative w-12 h-12 rounded-2xl bg-gradient-to-br from-sky-500 via-blue-600 to-blue-800 flex items-center justify-center shadow-lg shadow-sky-500/25 group-hover:scale-105 transition-transform duration-200">
-              <Droplets className="w-6 h-6 text-white drop-shadow" />
-              <div className="absolute -bottom-1 -right-1 bg-amber-400 text-blue-950 p-1 rounded-full shadow-sm">
-                <Wrench className="w-3 h-3" />
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <span className="block text-xl sm:text-2xl font-black tracking-tight text-blue-950 leading-tight">
-                LOJA DO <span className="text-sky-600">ENCANADOR</span>
-              </span>
-              <span className="text-xs sm:text-[13px] font-bold text-sky-700 tracking-wide block mt-0.5 leading-tight">
+          {/* Logo Oficial Recriado da Fachada */}
+          <a href="#" className="flex items-center gap-3 group shrink-0" title="Loja do Encanador - Início">
+            <img 
+              src="./images/logo.svg" 
+              alt="Logo Oficial Loja do Encanador" 
+              className="h-12 sm:h-14 w-auto object-contain group-hover:scale-105 transition-transform duration-200"
+            />
+            <div className="hidden sm:flex flex-col">
+              <span className="text-xs sm:text-[13px] font-extrabold text-sky-800 tracking-wide block leading-tight">
                 Material de Construções e Hidráulica
               </span>
               <span className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wider block leading-tight">

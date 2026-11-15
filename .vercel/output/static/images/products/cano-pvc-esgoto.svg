@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgEsgoto" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f1f5f9"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <linearGradient id="pvcWhite1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#f8fafc"/>
+      <stop offset="70%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <filter id="shadowEsgoto" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <rect width="600" height="450" fill="url(#bgEsgoto)"/>
+  <ellipse cx="300" cy="385" rx="250" ry="25" fill="#94a3b8" opacity="0.4"/>
+
+  <g filter="url(#shadowEsgoto)">
+    <!-- Barra Esgoto 50mm -->
+    <g transform="translate(50, 120)">
+      <rect x="0" y="0" width="500" height="52" rx="5" fill="url(#pvcWhite1)" stroke="#94a3b8" stroke-width="1"/>
+      <rect x="0" y="3" width="500" height="12" rx="3" fill="#ffffff" opacity="0.8"/>
+      <rect x="445" y="-4" width="55" height="60" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+      <!-- Anel de borracha preto -->
+      <rect x="465" y="-2" width="6" height="56" fill="#1e293b"/>
+      <ellipse cx="500" cy="26" rx="8" ry="30" fill="#64748b"/>
+      <ellipse cx="500" cy="26" rx="5" ry="25" fill="#334155"/>
+      <text x="30" y="32" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#0284c7">CANO DE ESGOTO 50mm - SÉRIE NORMAL</text>
+    </g>
+
+    <!-- Barra Esgoto 100mm (Principal) -->
+    <g transform="translate(40, 210)">
+      <rect x="0" y="0" width="520" height="105" rx="6" fill="url(#pvcWhite1)" stroke="#94a3b8" stroke-width="1.5"/>
+      <rect x="0" y="6" width="520" height="25" rx="4" fill="#ffffff" opacity="0.9"/>
+      <rect x="455" y="-6" width="70" height="117" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+      <!-- Anel de borracha da junta elástica -->
+      <rect x="480" y="-3" width="10" height="111" fill="#0f172a"/>
+      <ellipse cx="525" cy="52" rx="14" ry="58" fill="#64748b"/>
+      <ellipse cx="525" cy="52" rx="8" ry="50" fill="#1e293b"/>
+      <text x="30" y="60" font-family="system-ui, sans-serif" font-size="16" font-weight="black" fill="#0369a1">CANO DE ESGOTO 100mm (4") COM JUNTA ELÁSTICA</text>
+    </g>
+  </g>
+
+  <rect x="200" y="380" width="200" height="32" rx="16" fill="#0284c7"/>
+  <text x="300" y="401" font-family="system-ui, sans-serif" font-size="12" font-weight="black" fill="#ffffff" text-anchor="middle">CANO PVC ESGOTO (BRANCO)</text>
+</svg>

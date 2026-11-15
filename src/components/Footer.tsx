@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 import { storeInfo } from '../data/storeInfo';
-import { Droplets, Wrench, MessageCircle, MapPin, Clock, Truck, ShoppingBag, Mail } from 'lucide-react';
+import { MessageCircle, MapPin, Clock, Truck, ShoppingBag, Mail } from 'lucide-react';
 import { InstagramIcon } from './icons/InstagramIcon';
 
 export const Footer: FC = () => {
@@ -14,15 +14,16 @@ export const Footer: FC = () => {
           
           {/* Coluna 1: Nome Destacado e Apresentação */}
           <div className="lg:col-span-5 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="relative w-11 h-11 rounded-xl bg-gradient-to-br from-sky-500 to-blue-700 flex items-center justify-center shadow-lg">
-                <Droplets className="w-6 h-6 text-white" />
-                <div className="absolute -bottom-1 -right-1 bg-amber-400 text-blue-950 p-1 rounded-full">
-                  <Wrench className="w-3 h-3" />
-                </div>
+            <div className="flex items-center gap-3.5">
+              <div className="bg-white p-2 rounded-xl shadow-md shrink-0">
+                <img 
+                  src="./images/logo.svg" 
+                  alt="Logo Oficial Loja do Encanador" 
+                  className="h-12 w-auto object-contain"
+                />
               </div>
               <div>
-                <span className="block text-2xl font-black tracking-tight text-white leading-none">
+                <span className="block text-xl font-black tracking-tight text-white leading-none">
                   LOJA DO <span className="text-sky-400">ENCANADOR</span>
                 </span>
                 <span className="text-xs font-semibold text-sky-300 tracking-wider uppercase block mt-1">

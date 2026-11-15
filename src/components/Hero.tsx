@@ -23,12 +23,16 @@ export const Hero: FC = () => {
               <span>Itaú de Minas - MG • Entregas Rápidas na Sua Obra</span>
             </div>
 
-            {/* Título Principal: LOJA DO ENCANADOR */}
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-blue-950 tracking-tight leading-tight sm:leading-none">
-              LOJA DO <span className="text-sky-600">ENCANADOR</span>
-            </h1>
+            {/* Logo Oficial Recriado da Fachada */}
+            <div className="mb-5 flex justify-center lg:justify-start">
+              <img 
+                src="./images/logo.svg" 
+                alt="Logo Oficial Loja do Encanador - Itaú de Minas" 
+                className="h-28 sm:h-36 md:h-44 w-auto object-contain drop-shadow-md"
+              />
+            </div>
             
-            <p className="mt-3 text-lg sm:text-2xl font-bold text-sky-900">
+            <p className="mt-1 text-lg sm:text-2xl font-bold text-sky-900">
               Materiais de Construção, Hidráulica e Cubas em Itaú de Minas
             </p>
 
