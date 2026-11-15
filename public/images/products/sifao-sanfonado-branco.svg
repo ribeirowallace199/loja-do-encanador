@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgSifao" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="sifaoWhite" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#f1f5f9"/>
+      <stop offset="80%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <filter id="shadowSifao" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="600" height="450" fill="url(#bgSifao)"/>
+  <ellipse cx="300" cy="390" rx="210" ry="20" fill="#94a3b8" opacity="0.3"/>
+
+  <g filter="url(#shadowSifao)">
+    <!-- Porca / Rosca Superior (Entrada da Pia) -->
+    <rect x="110" y="90" width="75" height="45" rx="6" fill="#0284c7"/>
+    <rect x="115" y="80" width="65" height="15" rx="3" fill="#0369a1"/>
+    <ellipse cx="147" cy="80" rx="32" ry="10" fill="#0f172a"/>
+    <ellipse cx="147" cy="80" rx="24" ry="7" fill="#38bdf8"/>
+    <!-- Copo ou adaptador -->
+    <rect x="120" y="130" width="55" height="35" rx="4" fill="url(#sifaoWhite)"/>
+
+    <!-- Tubo Sanfonado Flexível em Curva Sifonada (S) -->
+    <path d="M 147 165 C 147 320 280 340 320 260 C 350 200 400 200 420 260 C 430 290 450 310 500 310" 
+          fill="none" stroke="url(#sifaoWhite)" stroke-width="48" stroke-linecap="round"/>
+    <!-- Aneis / Ondulações do Sanfonado -->
+    <path d="M 147 165 C 147 320 280 340 320 260 C 350 200 400 200 420 260 C 430 290 450 310 500 310" 
+          fill="none" stroke="#94a3b8" stroke-width="48" stroke-dasharray="7,7" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Ponta Escalonada de Saída para o Esgoto (DN 38, 40, 48, 50mm) -->
+    <g transform="translate(480, 285)">
+      <rect x="0" y="0" width="20" height="50" rx="3" fill="#cbd5e1" stroke="#64748b"/>
+      <rect x="18" y="4" width="20" height="42" rx="3" fill="#cbd5e1" stroke="#64748b"/>
+      <rect x="36" y="8" width="20" height="34" rx="3" fill="#cbd5e1" stroke="#64748b"/>
+      <ellipse cx="56" cy="25" rx="6" ry="17" fill="#475569"/>
+    </g>
+  </g>
+
+  <rect x="180" y="380" width="240" height="32" rx="16" fill="#0284c7"/>
+  <text x="300" y="401" font-family="system-ui, sans-serif" font-size="12" font-weight="black" fill="#ffffff" text-anchor="middle">SIFÃO SANFONADO UNIVERSAL</text>
+</svg>

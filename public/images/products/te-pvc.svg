@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgTe" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="pvcTe" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b6664e"/>
+      <stop offset="45%" stop-color="#844331"/>
+      <stop offset="100%" stop-color="#492217"/>
+    </linearGradient>
+    <filter id="shadowTe" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect width="600" height="450" fill="url(#bgTe)"/>
+  <ellipse cx="300" cy="385" rx="210" ry="20" fill="#94a3b8" opacity="0.3"/>
+
+  <g filter="url(#shadowTe)" transform="translate(160, 100)">
+    <!-- Barra Horizontal do Tê -->
+    <rect x="0" y="110" width="280" height="75" rx="8" fill="url(#pvcTe)"/>
+    <!-- Saída Superior 90° -->
+    <rect x="100" y="0" width="80" height="130" rx="8" fill="url(#pvcTe)"/>
+    <!-- Anéis reforçados de encaixe -->
+    <rect x="-5" y="105" width="25" height="85" rx="4" fill="#a85942"/>
+    <ellipse cx="0" cy="147" rx="10" ry="42" fill="#33140b"/>
+    <ellipse cx="0" cy="147" rx="6" ry="34" fill="#1e0a05"/>
+
+    <rect x="260" y="105" width="25" height="85" rx="4" fill="#a85942"/>
+    <ellipse cx="280" cy="147" rx="10" ry="42" fill="#33140b"/>
+    <ellipse cx="280" cy="147" rx="6" ry="34" fill="#1e0a05"/>
+
+    <rect x="95" y="-5" width="90" height="25" rx="4" fill="#a85942"/>
+    <ellipse cx="140" cy="0" rx="45" ry="10" fill="#33140b"/>
+    <ellipse cx="140" cy="0" rx="36" ry="6" fill="#1e0a05"/>
+  </g>
+
+  <rect x="190" y="380" width="220" height="32" rx="16" fill="#844331"/>
+  <text x="300" y="401" font-family="system-ui, sans-serif" font-size="12" font-weight="black" fill="#ffffff" text-anchor="middle">TÊ 90° PVC SOLDÁVEL</text>
+</svg>

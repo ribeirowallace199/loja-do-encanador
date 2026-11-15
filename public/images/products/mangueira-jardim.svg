@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgHose" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#dcfce7"/>
+    </linearGradient>
+    <linearGradient id="greenHose" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="30%" stop-color="#16a34a"/>
+      <stop offset="70%" stop-color="#15803d"/>
+      <stop offset="100%" stop-color="#14532d"/>
+    </linearGradient>
+    <filter id="shadowHose" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect width="600" height="450" fill="url(#bgHose)"/>
+  <ellipse cx="300" cy="385" rx="210" ry="25" fill="#15803d" opacity="0.25"/>
+
+  <g filter="url(#shadowHose)">
+    <!-- Espirais do Rolo de Mangueira Verde -->
+    <ellipse cx="300" cy="225" rx="210" ry="125" fill="none" stroke="url(#greenHose)" stroke-width="45"/>
+    <!-- Trama trançada (malha de poliéster) -->
+    <ellipse cx="300" cy="225" rx="210" ry="125" fill="none" stroke="#ffffff" stroke-width="45" stroke-dasharray="3,6" opacity="0.3"/>
+
+    <ellipse cx="300" cy="225" rx="160" ry="95" fill="none" stroke="url(#greenHose)" stroke-width="40"/>
+    <ellipse cx="300" cy="225" rx="160" ry="95" fill="none" stroke="#ffffff" stroke-width="40" stroke-dasharray="3,6" opacity="0.3"/>
+
+    <ellipse cx="300" cy="225" rx="110" ry="65" fill="none" stroke="url(#greenHose)" stroke-width="35"/>
+    <ellipse cx="300" cy="225" rx="55" ry="35" fill="#dcfce7"/>
+
+    <!-- Ponta da mangueira com Esguicho Laranja -->
+    <path d="M 460 170 Q 520 220 480 310 L 410 330" fill="none" stroke="url(#greenHose)" stroke-width="26" stroke-linecap="round"/>
+    <!-- Esguicho / Bico regulador -->
+    <g transform="translate(370, 315) rotate(10)">
+      <rect x="0" y="0" width="35" height="24" rx="4" fill="#f97316"/>
+      <rect x="30" y="4" width="20" height="16" rx="3" fill="#ea580c"/>
+      <rect x="48" y="7" width="10" height="10" rx="2" fill="#ca8a04"/>
+    </g>
+  </g>
+
+  <rect x="170" y="380" width="260" height="32" rx="16" fill="#16a34a"/>
+  <text x="300" y="401" font-family="system-ui, sans-serif" font-size="12" font-weight="black" fill="#ffffff" text-anchor="middle">MANGUEIRA TRANÇADA (POR METRO)</text>
+</svg>
